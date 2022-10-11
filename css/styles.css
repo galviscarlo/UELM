@@ -7,7 +7,7 @@
   --dark: #203B6A;
   --black: #333;
   --white: white;
-  --bg-dark: #152435;
+  --bg-dark: #4685cd;
 }
 
 * {
@@ -327,4 +327,10 @@ form h3 {
   color: var(--white);
   font-weight: bold;
   background-color: #e3a72f;
+}
+
+.footer-copyright{
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
 }
