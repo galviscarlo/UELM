@@ -403,6 +403,7 @@ form h3 {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
 .carrousel .punto {
