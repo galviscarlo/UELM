@@ -100,23 +100,26 @@ header .header__icons__container .icons {
 header .icons span {
   color:  #e3a72f;
 }
-.hero {
+  .hero {
   color: var(--white);
   background-color: var(--bg-dark);
   height: 70rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .hero__content {
-  width: 104rem;
+  width: max-content;
+  height: max-content;
   /*margin: 0 auto;*/
   /*width: 52rem;*/
 }
 
 .hero___content div {
-  width: 46rem;
+  width: max-content;
+  height:max-content ;
   padding: 3rem;
 }
 
@@ -177,6 +180,13 @@ header .icons span {
   background-color: lightgrey;
 }
 
+.photo__gallery div:first-child img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
 .photo__gallery div:nth-child(2) {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -185,12 +195,24 @@ header .icons span {
   background-color: lightgrey;
 }
 
+.photo__gallery div:nth-child(2) img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%; 
+}
+
 .photo__gallery div:last-child {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   width: 100%;
   height: 100%;
   background-color: lightgrey;
+  
+}
+.photo__gallery div:last-child img{
+  object-fit: cover;
+  width: 100%;  
+  height: 100%;   
 }
 
 .about__content h2 {
@@ -333,4 +355,101 @@ form h3 {
   width: 100%;
   font-size: 12px;
   text-align: center;
+}
+
+.carrousel {
+  width: 45%;
+  max-width: 60em;
+  padding: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0);
+}
+
+.carrousel .img {
+  width: calc( 100% / 2 - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--gray);
+  box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+  background-color: lightblue;
+}
+
+#contacto {
+   font-size: larger;}
+
+input::placeholder{
+  font-size: larger;
+}
+textarea::placeholder{
+  font-size: larger;
+}
+
+#nombre{
+  font-size: small;
+}
+#Phone{
+  font-size: small;
+}
+#Email{
+  font-size: small;
+}
+
+#exampleFormControlTextarea2{
+  font-size: small;
+}
+#tit{
+  font-size: xx-large;
+}
+#meinteresa{
+  font-size: medium;
+}
+#selector{
+  font-size: medium;
 }
