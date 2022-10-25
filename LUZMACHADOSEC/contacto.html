@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="icon" href="favi.con.ico" type="image/x-icon">
+    <script defer src="js\app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <title> UELM-CONTACTO</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo">
+            <img src="assets/img/2.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav__menu">
+                <li><a class="nav-link" href="index.html">INICIO</a></li>
+                <li> <a class="nav-link" href="somos.html">QUIENES SOMOS</a></li>
+                <li><a class="nav-link" href="galeria.html">GALERIA</a></li>
+                <li><a class="nav-link" href="admisiones.html">ADMISIONES</a></li>
+                <li><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <section class="header__icons__container">
+            <div class="icons">
+                <a href="https://www.instagram.com/p/CVBX9FNPMmP/?utm_medium=share_sheet"><span class="flaticon-011-instagram"></Span></a>
+                <a href="https://wa.me/584147807091?text=%F0%9F%91%A9%E2%80%8D%F0%9F%8F%AB%F0%9F%91%A8%E2%80%8D%F0%9F%8F%ABBienvenidos,%20padres%20y%20representantes.%20Para%20los%20que%20no%20nos%20conocen%20%20somos%20la%20Unidad%20Educativa%20Privada%20Luz%20Machado.%F0%9F%8F%AB%20Una%20instituci%C3%B3n%20creada%20para%20ni%C3%B1os,%20ni%C3%B1as%20y%20adolescentes"><span class="flaticon-003-whatsapp"></span></a>
+                <a href="https://www.youtube.com/account"><span class="flaticon-008-youtube"></span></a>
+            </div>
+        </section>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <form id="contacto" name = "fvalida" class="text-center p-5" action="#!">
+
+                <p id="tit" class="h1 mb-6">Contáctenos</p>
+            
+                
+                <input type="text" name="nombre" id="nombre" class="form-control mb-4" placeholder="Nombre Completo">
+            
+               
+                <input type="phone" name="telefono" id="Phone" class="form-control mb-4" placeholder="Telefono">
+            
+                
+                <input type="email" name="email" id="Email" class="form-control mb-4" placeholder="E-mail">
+            
+                
+                <label id="meinteresa">Me interesa saber mas sobre:      
+                </label>
+                <select name="interes" id="selector"class="browser-default custom-select mb-4">
+                    <option value="0" selected disabled>Escoja una opcion</option>
+                    <option value="1" >Horarios</option>
+                    <option value="2">Aranceles</option>
+                    <option value="3">Actividades Extra-Curriculares</option>
+                    <option value="4">Modalidad de cursada</option>
+                    <option value="4">Proceso de admisiones</option>
+                </select>
+            
+                
+                <div class="form-group">
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4" placeholder="Comentarios"></textarea>
+                </div>
+            
+                <br>
+            
+               
+                <button class="btn btn-info btn-block" type="button" value="Enviar" onclick="valida_envia()">ENVIAR CONSULTA</button>
+            
+            </form> 
+        </div>
+    </section>
+    <footer>
+      <!--<section class="contact">
+        <h2>Solicita información sobre admisiones</h2>
+        <p>Si estás interesado en formar parte de la UELM, no dudes en contactarnos</p>
+        <form>
+          <a class="form__link" href="contacto.html">
+            <button>Envianos un mensaje</button>
+          </a>
+        </form>
+      </section>-->
+        <p>© Copyright 2022 CAC20502 CEMG / Todos los derechos reservados. Prohibida la duplicación, distribución o
+            almacenamiento en cualquier medio.</p>
+    </footer>
+</body>
+
+</html>
