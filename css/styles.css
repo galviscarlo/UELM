@@ -69,6 +69,7 @@ a {
   font-size: 1.6rem;
   padding: 0 1.7rem;
 }
+
 .nav__link {
   list-style: none;
   display: flex;
@@ -134,6 +135,17 @@ header .icons span {
 }
 
 .hero button {
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+  background-color: #e3a72f;
+}
+
+.contact button {
   font-size: 1.4rem;
   border: none;
   border-radius: 5rem;
@@ -237,7 +249,6 @@ header .icons span {
   line-height: 2.4rem;
 }
 
-
 /* features */
 .features {
   background-color: var(--lightgrey);
@@ -286,7 +297,7 @@ header .icons span {
   background-color: var(--bg-dark);
   color: var(--white);
   height: auto;
-  padding: 3rem 0;
+  padding: 3rem ;
 }
 
 .offers__container {
@@ -339,7 +350,7 @@ form h3 {
   color: var(--black);
 }
 
-.form__link button{
+.form__link button {
   width: 100%;
   font-size: 1.4rem;
   border: none;
@@ -351,9 +362,50 @@ form h3 {
   background-color: #e3a72f;
 }
 
+/* mapa form */
+.mapa {
+  width:"100" height="60";
+  background-color: aqua;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding-bottom: 1rem;
+  
+  
+}
+
+.mapa h2 {
+  text-align: center;
+  font-size: var(--md);
+  color: var(--dark);
+  width: 45%;
+  padding: 1.5rem; 
+}
+
+  /* contact2 form */
+.contact2 {
+  background-color: #4685cd;
+  color: var(--white);
+  text-align: center;
+  font-size: var(--std);
+  line-height: 2.4rem;
+  
+    
+}
+
+form {
+  width: 52rem;
+  display: flex;
+  flex-flow:column ;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+ 
 .footer-copyright{
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
 }
 
