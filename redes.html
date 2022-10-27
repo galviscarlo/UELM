@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="stylesheet" href="css/apistyles.css">
     <link rel="icon" href="favi.con.ico" type="image/x-icon">
-    <title> UELM-ADMISIONES</title>
+    /*  falta colocar link fonts.googleapis para los iconos */
+    <title> UELM-RedesSociales</title>
 </head>
 
 <body>
@@ -17,11 +19,11 @@
             <img src="assets/img/2.png" alt="logo">
         </a>
         <nav>
-            <ul class="nav__menu">
+            <ul class="nav__menu">ADMISIONES
                 <li><a class="nav-link" href="index.html">INICIO</a></li>
                 <li> <a class="nav-link" href="somos.html">QUIENES SOMOS</a></li>
                 <li><a class="nav-link" href="galeria.html">GALERIA</a></li>
-                <li><a class="nav-link" href="admisiones.html">ADMISIONES</a></li>
+                <li><a class="nav-link" href="redes.html">ADMISIONES</a></li>
                 <li><a class="nav-link" href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
@@ -33,31 +35,31 @@
             </div>
         </section>
     </header>
-    <section class="hero">
-        <div class="hero__content">
-                <p >Proceso de admisión para la Unidad Educativa Luz Machado
-                Teniendo en cuenta las diferencias de cada nuevo alumno, hemos diseñado un proceso de admisión para conocer al alumno, a su familia, y responder a sus necesidades.
-                </p> 
-                                      
-                    <h1>Inscripción </h1>
-                    <p>Se concreta la inscripción del alumno, para lo cual el representante debe traer toda la documentación solicitada.</p> 
-
-                    <h1>Visita</h1>
-                    <p> Si fuera de interés se agendará una visita guiada para conocer las instalaciones. </p>
-               
-                    <h1>Entrevista</h1>
-                    <p> Concertar entrevista y prueba de nivelación.</p>
-                
-                    <h1>Información</h1>
-                    <p> información vía web, email o telefónica.</p>
-
-                   
-
-            
-        </div>
-        
-    </section>
+    <main>
+        <h1>Nuestro Instagram</h1>
+        <section id="freed-contenedor">
+            <div class="main-galery">
+                <!-- left -->
+                <div class="chevron">
+                    <span id="prev" class="material-icons">
+                        &#xe5cb;
+                    </span>
+                </div>
+                <div class="contenedor-galery">
+                    <div class="galery">
     
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="chevron">
+                    <span id="next" class="material-icons">
+                        &#xe5cc;
+                    </span>
+                </div>
+            </div>
+        </section>
+        <script src="api.js"></script>
+    </main>
     <footer>
         <section class="contact">
             <h2>Solicita información sobre admisiones</h2>
@@ -75,3 +77,4 @@
 </body>
 
 </html>
+
